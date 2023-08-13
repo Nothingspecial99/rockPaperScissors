@@ -43,3 +43,42 @@ function capitalize(text){
 
 }
 
+function game(){
+    let playerScore = 0;
+    let computerScore = 0;
+    let gameOutcome;
+
+    for (let i = 0; i < 5; i++){
+        let playerSelection = prompt('Enter your choice: ');
+        let computerSelection = getComputerChoice();
+        let result = playRound(playerSelection, computerSelection);
+
+        if (result == 'player'){
+            playerScore += 1;
+            console.log(`${capitalize(result)} won! ${capitalize(playerSelection)} beats ${capitalize(computerSelection)}`)
+        }
+        else if (result =='computer'){
+            computerScore += 1;
+            console.log(`${capitalize(result)} won! ${capitalize(computerSelection)} beats ${capitalize(playerSelection)}`)
+
+        }
+        else{
+            console.log("Tie!")
+        }
+        console.log(`Try ${i}`)
+    }
+
+    console.log(`Player: ${playerScore}\nComputer: ${computerScore}`)
+    if (playerScore > computerScore){
+        gameOutcome = 'You won!'
+    }
+    else if (computerScore == playerScore){
+        gameOutcome = 'It was tie!'
+    }
+    else {
+        gameOutcome = "You lost :("
+    }
+    console.log(gameOutcome)
+
+
+}
