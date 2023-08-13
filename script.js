@@ -34,3 +34,12 @@ function playRound(playerSelection, computerSelection){
     }
     return outcome;
 }
+
+function capitalize(text){
+    firstLetter = text[0].toUpperCase();
+    restOfText = text.slice(1).toLowerCase();
+
+    return `${firstLetter}${restOfText}`
+
+}
+
