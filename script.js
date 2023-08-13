@@ -65,7 +65,6 @@ function game(){
         else{
             console.log("Tie!")
         }
-        console.log(`Try ${i}`)
     }
 
     console.log(`Player: ${playerScore}\nComputer: ${computerScore}`)
