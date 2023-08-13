@@ -12,3 +12,25 @@ function getComputerChoice(){
     }
     return computerChoice
 }
+
+function playRound(playerSelection, computerSelection){
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
+    let outcome;
+    if (playerSelection == "rock" && computerSelection == 'scissor'){
+        outcome = "player";
+    }
+    else if(playerSelection == "paper" && computerSelection == 'rock'){
+        outcome = 'player';
+    }
+    else if (playerSelection == 'scissor' && computerSelection == 'paper') {
+        outcome = 'player';
+    }
+    else if (playerSelection == computerSelection){
+        outcome = 'nobody';
+    }
+    else{
+        outcome = 'computer';
+    }
+    return outcome;
+}
