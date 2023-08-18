@@ -22,6 +22,95 @@ html, body {
     width: 30%;
     height: 70%;
     background-color: rgba(50,54,68,255);
+    display: flex;
+}
+
+.sub-container{
+    height: 100%;
+    display: flex;
+    width: 90%;
     border: 1px solid white;
-    border-radius: 10px;
+
+
+}
+.choices {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.choices button {
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    padding: 10px auto;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.display-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    flex: 1;
+}
+.display-area div {
+    width: 150px;
+    height: 180px;
+    border: 1px solid white;
+}
+
+.score-cards {
+    width: 60px;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(39,42,55,255);
+}
+
+.computer-score-card, .player-score-card{
+    width: 40px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+.fa-solid {
+    
+    background-color:rgba(39,42,55,255);
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    
+    
+}
+
+.fa-person{
+    font-size: 24px;
+}
+
+.score {
+    height: 35px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    
 }
