@@ -66,6 +66,12 @@ html, body {
     width: 150px;
     height: 180px;
     border: 1px solid white;
+    color: gold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
 }
 
 .score-cards {
@@ -113,4 +119,11 @@ html, body {
     font-family: monospace;
     font-size: 16px;
     
+}
+
+#winner {
+    font-size: 24px;
+    font-family: monospace;
+    text-align: center;
+    color: black;
 }
